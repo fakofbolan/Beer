@@ -1,0 +1,15 @@
+.beer-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 100px;
+  width: 80%;
+  margin: 20px;
+}
+.beer-image {
+  height: 500px;
+}
+.beer-name {
+  font-size: 50px;
+}

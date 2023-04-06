@@ -1,0 +1,30 @@
+$shadow: 0.3rem 0.3rem 0.6rem rgb(204, 143, 30),
+  -0.2rem -0.2rem 0.5rem rgb(204, 143, 30);
+$inner-shadow: inset 0.2rem 0.2rem 0.5rem ,
+  inset -0.2rem -0.2rem 0.5rem rgb(204, 143, 30);
+
+.btn {
+  width: 15rem;
+  height: 4rem;
+  border-radius: 1rem;
+  box-shadow: $shadow;
+  justify-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-size: 1.6rem;
+  border: none;
+
+  &__secondary {
+    margin-top: 100px;
+    color: var(--greyDark);
+    &:hover {
+      color: var(--primary);
+    }
+    &:active {
+      box-shadow: $inner-shadow;
+    }
+  }
+}
